@@ -580,6 +580,7 @@ header {
     background-color: white;
     color: #328468;
     box-shadow: 0 5px #666;
+    transform: translateY(4px);
   }
   /* END GO TO SHOP */
   
@@ -626,6 +627,13 @@ header {
     display: flex;
     align-items: center;
     position: relative;
+  }
+  
+  .newReleasesContainer_Item_Image{
+    transition: all .5s;
+  }
+  .newReleasesContainer_Item_Image:hover {
+    transform: scale(1.2);
   }
   
   .newReleasesContainer_NewText{
@@ -772,6 +780,13 @@ header {
     display: flex;
     align-items: center;
     position: relative;
+  }
+  
+  .shopItemContainer_Item_Image{
+    transition: all .5s;
+  }
+  .shopItemContainer_Item_Image:hover {
+    transform: scale(1.2);
   }
   /* END SHOP */
   
