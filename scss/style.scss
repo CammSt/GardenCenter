@@ -1,0 +1,45 @@
+@import 'index';
+@import 'location';
+@import 'shop';
+@import 'aboutUs';
+@import 'contactInfo';
+
+@import 'header';
+@import 'footer';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header" "headerContainer" "pageContent"
+}
+
+.pageContent {
+    grid-area: pageContent;
+}
+
+.titleContainer {
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+.titleContainer__Text{
+    font-size: 2vw;
+    color: #328468;
+    font-style: italic;
+}
+
+@media screen and (max-width:800px ) {
+
+    .titleContainer__Text{
+        font-size: 4vw;
+        color: #328468;
+        font-style: italic;
+    }
+    
+}

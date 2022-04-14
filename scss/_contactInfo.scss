@@ -1,0 +1,180 @@
+.messageForm {
+    margin-left: 8%;
+    margin-right: 10%;
+    width: 70%;
+
+    textarea {
+        width: 85%;
+    }
+}
+.form-control{
+    border: solid #8E8E8E 0.5px;
+    resize: none;
+}
+
+.formLabel {
+    font-size: 1.2vw;
+    color: rgb(120, 127, 133);
+}
+  
+.btn {
+    padding: 0;
+    margin: 0;
+    font-size: 1.1vw;
+    font-weight:600;
+    font-style: italic;
+    color: white;
+    border-radius: 0.8vw;
+    background-color: #328468;
+    border-color: transparent;
+    width: 23%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+
+    box-shadow: 0 .5vw #999;
+
+    &:active {
+        background-color: white;
+        color: #328468;
+        outline: none;
+        box-shadow: 0 0.9px #666;
+        transform: translateY(4px);  
+        border-color: transparent;
+    }
+    &:hover, &:focus {
+        background-color: white;
+        color: #328468;
+        border-color: transparent;
+        outline: none;
+    }
+}
+
+.contactListContainer {
+    margin-left: 8%;
+    margin-bottom: 5%;
+    display: block;
+
+    .fa-brands {
+        font-size: 1.5vw;
+    }
+
+    .fa-solid {
+        font-size: 1.5vw;
+    }
+
+    a {
+        width: 30%; 
+        text-decoration: none;
+        color: #3D3C3C;
+        padding-left: 1%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+
+        &:hover {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2vw;
+            border-radius: 5px;
+            background-color: #398C70;
+          
+            padding-left: 1%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+    }
+}
+
+.contactListContainer__Link {
+    display: flex;
+    color: #3D3C3C;
+    margin-bottom: 1%;
+}
+.contactListContainer__Link__Text {
+    font-size: 1.2vw;
+    margin-left: 10%;
+}
+
+@media screen and (max-width:800px ) {
+
+    .formLabel {
+        font-size: 2.7vw;
+        color: rgb(120, 127, 133);
+    }
+      
+    .btn {
+        padding: 0;
+        margin: 0;
+        font-size: 2.4vw;
+        font-weight:600;
+        font-style: italic;
+        color: white;
+        border-radius: 0.8vw;
+        background-color: #328468;
+        border-color: transparent;
+        width: 45%;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        box-shadow: 0 .5vw #999;
+
+        &:active {
+            background-color: white;
+            color: #328468;
+            outline: none;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);  
+            border-color: transparent;
+        }
+        &:hover, &:focus {
+            background-color: white;
+            color: #328468;
+            border-color: transparent;
+            outline: none;
+        }
+    }
+
+    .contactListContainer {
+        margin-left: 8%;
+        margin-bottom: 5%;
+        display: block;
+    
+        .fa-brands {
+            font-size: 3.7vw;
+        }
+    
+        .fa-solid {
+            font-size: 3.7vw;
+        }
+    
+        a {
+            width: 60%; 
+            text-decoration: none;
+            color: #3D3C3C;
+            padding-left: 1%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+    
+            &:hover {
+                text-decoration: none;
+                color: white;
+                font-size: 1.2vw;
+                border-radius: 5px;
+                background-color: #398C70;
+              
+                padding-left: 1%;
+                padding-top: 1%;
+                padding-bottom: 1%;
+            }
+        }
+    }
+    
+    .contactListContainer__Link {
+        display: flex;
+        color: #3D3C3C;
+        margin-bottom: 1%;
+    }
+    .contactListContainer__Link__Text {
+        font-size: 2.7vw;
+        margin-left: 10%;
+    }
+
+}

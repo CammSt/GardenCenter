@@ -1,0 +1,62 @@
+.mapContainer {
+    text-align: center;
+    margin-top: 2%;
+}
+   
+.pointsOfSaleTitleContainer {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+   
+.pointsOfSaleContainer__Title {
+    font-size: 1.5vw;
+    font-style: italic;
+    margin-bottom: 2%;
+    color: #3D3C3C;
+}
+   
+.pointsOfSaleContainer {
+    margin-left: 8%;
+    margin-bottom: 5%;
+}
+   
+.pointsOfSaleContainer__Direction {
+    display: flex;
+    margin-bottom: 1%;
+}
+   
+.pointsOfSaleContainer__Direction i {
+    font-size: 1.3vw;
+    color: #328468;
+}
+   
+.pointsOfSaleContainer__Direction div {
+    font-size: 1.3vw;
+    margin-left: 2%;
+    color: #3D3C3C;
+}
+
+@media screen and (max-width:800px ) {
+    .pointsOfSaleTitleContainer {
+        h3 {
+            font-size: 2.5vw;
+        }
+    }
+
+    .pointsOfSaleContainer__Direction {
+        display: flex;
+        margin-bottom: 1%;
+    }
+       
+    .pointsOfSaleContainer__Direction i {
+        font-size: 2.5vw;
+        color: #328468;
+    }
+       
+    .pointsOfSaleContainer__Direction div {
+        font-size: 2.5vw;
+        margin-left: 2%;
+        color: #3D3C3C;
+    }
+
+}

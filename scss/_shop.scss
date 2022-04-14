@@ -1,0 +1,162 @@
+.carouselsContainer {
+    display: flex; 
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+  
+#firstCarousel {
+    width: 30%
+} 
+#firstCarousel .itemName {
+    text-align: center;
+    color: #3D3C3C;
+    text-decoration:underline
+}
+#firstCarousel .itemName:active {
+    color: #328468;
+}
+#firstCarousel .itemName:hover {
+    color: #328468;
+}
+  
+  
+#secondCarousel {
+    width: 30%
+}
+#secondCarousel .itemName{
+    text-align: center;
+    color: #3D3C3C;
+    text-decoration:underline
+}
+#secondCarousel .itemName:active {
+    color: #328468;
+}
+#secondCarousel .itemName:hover {
+    color: #328468;
+}
+  
+
+.carouselsSubtitlesContainer{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2%;
+}
+.carouselsSubtitlesContainer__Text {
+    color: #328468;
+    font-size: 18px;
+    text-decoration: underline;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.carouselsSubtitlesContainer__Text:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #398C70;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+@media screen and (max-width:800px ) {
+    .carouselsContainer {
+        display: none;
+    }
+
+    .carouselsSubtitlesContainer{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2%;
+        margin-top: 3%;
+    }
+    .carouselsSubtitlesContainer__Text {
+        color: #328468;
+        font-size: 2.5vw;
+        text-decoration: underline;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 1.1vw;
+        padding-bottom: 1.1vw;
+    }
+    .carouselsSubtitlesContainer__Text:hover{
+        color: white;
+        text-decoration: none;
+        font-size: 2.5vw;
+        border-radius: 5px;
+        background-color: #398C70;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 1.1vw;
+        padding-bottom: 1.1vw;
+    }
+}
+
+.shopItemContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between; 
+    align-items: center;
+    row-gap: 5%;
+    padding-left: 5%;
+    margin-bottom: 20%;
+}
+  
+.shopItemContainer_Item {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+  
+.newReleasesContainer_Name{
+    font-size: 1.1vw;
+}
+  
+.newReleasesContainer_Price{
+    font-size: 1.1vw;
+    color: #328468;
+}
+
+.shopItemContainer_Item_Image{
+    transition: all .5s;
+}
+.shopItemContainer_Item_Image:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:800px ) {
+    .shopItemContainer{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        padding-left: 5%;
+        margin-bottom: 120%;
+    }
+      
+    .shopItemContainer_Item {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+      
+    .newReleasesContainer_Name{
+        font-size: 3vw;
+    }
+      
+    .newReleasesContainer_Price{
+        font-size: 3vw;
+        color: #328468;
+    }
+    
+    .shopItemContainer_Item_Image{
+        transition: none
+    }
+    .shopItemContainer_Item_Image:hover {
+        transform: none
+    }
+}
