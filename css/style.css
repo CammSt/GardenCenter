@@ -1,3 +1,8 @@
+.footerContainer__Top, .eachPaymentContainer__Text, .paymentAndShippingContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .goToShopContainer {
   position: relative;
   text-align: center;
@@ -23,17 +28,17 @@
   bottom: 8%;
   left: 32%;
   width: 13%;
-  background-color: #328468;
   font-size: 1.4vw;
   font-style: italic;
-  color: white;
   border-radius: 0.2vw;
   border: #328468;
   box-shadow: 0 0.2vw #999;
+  background-color: #328468;
+  color: white;
 }
 .goToShopContainer__Button:hover, .goToShopContainer__Button:focus {
-  background-color: white;
-  color: #328468;
+  background-color: #328468;
+  color: white;
   outline: none;
 }
 .goToShopContainer__Button:active {
@@ -71,30 +76,28 @@
     left: 20%;
     width: 27%;
     height: 4.8vw;
-    background-color: #328468;
     font-size: 3vw;
     font-style: italic;
-    color: white;
     border-radius: 3px;
     border: #328468;
     box-shadow: 0 0.3vw #999;
+    background-color: #328468;
+    color: white;
   }
   .goToShopContainer__Button:hover, .goToShopContainer__Button:focus {
-    background-color: white;
-    color: #328468;
+    background-color: #328468;
+    color: white;
     outline: none;
   }
   .goToShopContainer__Button:active {
-    background-color: white;
-    color: #328468;
+    background-color: #328468;
+    color: white;
     outline: none;
     box-shadow: 0 3px #666;
     transform: translateY(4px);
   }
 }
 .paymentAndShippingContainer {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 3%;
 }
@@ -113,8 +116,6 @@
 
 .eachPaymentContainer__Text {
   font-size: 1.1vw;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-top: 10%;
 }
@@ -173,11 +174,11 @@
   position: absolute;
   top: 2%;
   left: 1%;
-  background-color: #11b899;
   text-align: center;
-  color: white;
   border-radius: 0.2vw;
   width: 10vw;
+  background-color: #11b899;
+  color: white;
 }
 
 .newReleasesContainer_Name {
@@ -211,11 +212,11 @@
   .newReleasesContainer_NewText {
     font-size: 2vw;
     position: absolute;
-    background-color: #11b899;
     text-align: center;
-    color: white;
     border-radius: 0.2vw;
     width: 15vw;
+    background-color: #11b899;
+    color: white;
   }
 
   .newReleasesContainer_Name {
@@ -294,6 +295,11 @@
     color: #3D3C3C;
   }
 }
+.footerContainer__Top, .paymentAndShippingContainer, .eachPaymentContainer__Text {
+  display: flex;
+  justify-content: space-between;
+}
+
 .carouselsContainer {
   display: flex;
   justify-content: space-around;
@@ -354,15 +360,15 @@
 }
 
 .carouselsSubtitlesContainer__Text:hover {
-  color: white;
   text-decoration: none;
   font-size: 18px;
   border-radius: 5px;
-  background-color: #398C70;
   padding-left: 7px;
   padding-right: 7px;
   padding-top: 5px;
   padding-bottom: 5px;
+  background-color: #398C70;
+  color: white;
 }
 
 @media screen and (max-width: 800px) {
@@ -388,15 +394,15 @@
   }
 
   .carouselsSubtitlesContainer__Text:hover {
-    color: white;
     text-decoration: none;
     font-size: 2.5vw;
     border-radius: 5px;
-    background-color: #398C70;
     padding-left: 2vw;
     padding-right: 2vw;
     padding-top: 1.1vw;
     padding-bottom: 1.1vw;
+    background-color: #398C70;
+    color: white;
   }
 }
 .shopItemContainer {
@@ -501,6 +507,11 @@
     margin-bottom: 5%;
   }
 }
+.footerContainer__Top, .paymentAndShippingContainer, .eachPaymentContainer__Text {
+  display: flex;
+  justify-content: space-between;
+}
+
 .messageForm {
   margin-left: 8%;
   margin-right: 10%;
@@ -526,22 +537,22 @@
   font-size: 1.1vw;
   font-weight: 600;
   font-style: italic;
-  color: white;
   border-radius: 0.8vw;
-  background-color: #328468;
   border-color: transparent;
   width: 23%;
   margin-bottom: 3%;
   margin-top: 3%;
   box-shadow: 0 0.5vw #999;
+  background-color: #328468;
+  color: white;
 }
 .btn:active {
-  background-color: white;
-  color: #328468;
   outline: none;
   box-shadow: 0 0.9px #666;
   transform: translateY(4px);
   border-color: transparent;
+  background-color: white;
+  color: #328468;
 }
 .btn:hover, .btn:focus {
   background-color: white;
@@ -571,10 +582,10 @@
 }
 .contactListContainer a:hover {
   text-decoration: none;
-  color: white;
   font-size: 1.2vw;
   border-radius: 5px;
   background-color: #398C70;
+  color: white;
   padding-left: 1%;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -603,9 +614,9 @@
     font-size: 2.4vw;
     font-weight: 600;
     font-style: italic;
-    color: white;
     border-radius: 0.8vw;
     background-color: #328468;
+    color: white;
     border-color: transparent;
     width: 45%;
     margin-bottom: 3%;
@@ -648,10 +659,10 @@
   }
   .contactListContainer a:hover {
     text-decoration: none;
-    color: white;
     font-size: 1.2vw;
     border-radius: 5px;
-    background-color: #398C70;
+    background-color: white;
+    color: #398C70;
     padding-left: 1%;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -668,6 +679,11 @@
     margin-left: 10%;
   }
 }
+.footerContainer__Top, .paymentAndShippingContainer, .eachPaymentContainer__Text {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logoContainer {
   background-color: #52B191;
   text-align: center;
@@ -705,8 +721,8 @@
   color: white;
 }
 .mainMenu li:active {
-  color: white;
   background-color: #43A080;
+  color: white;
 }
 .mainMenu a {
   padding: 0.5vw;
@@ -727,6 +743,14 @@
   left: 2%;
   bottom: 10%;
   font-size: 4vw;
+  font-style: italic;
+  color: white;
+}
+.headerContainer .headerContainer__Title {
+  position: absolute;
+  right: 2%;
+  top: 15%;
+  font-size: 2.8vw;
   font-style: italic;
   color: white;
 }
@@ -756,7 +780,6 @@
     color: white;
     text-decoration: none;
     font-size: 20px;
-    color: white;
   }
   header nav {
     width: 50%;
@@ -804,8 +827,8 @@
     color: white;
   }
   header nav .mainMenu li:active {
-    color: white;
     background-color: #43A080;
+    color: white;
   }
 
   .headerContainer {
@@ -823,15 +846,21 @@
     font-style: italic;
     color: white;
   }
+  .headerContainer .headerContainer__Title {
+    display: none;
+  }
 }
+.footerContainer__Top, .paymentAndShippingContainer, .eachPaymentContainer__Text {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footerContainer {
   background-color: #52B191;
   padding: 2%;
 }
 
 .footerContainer__Top {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .footerContainer__Top .footerLogo {
@@ -876,8 +905,6 @@
   }
 
   .footerContainer__Top {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   .footerContainer__Top .footerLogo {
@@ -900,10 +927,10 @@
     font-size: 4vw;
   }
   .footerContainer__Top__Icons a:hover {
-    color: white;
     border-radius: 0.5vw;
-    background-color: #195943;
     padding: 10%;
+    background-color: #195943;
+    color: white;
   }
 
   .footerContainer__Bottom {

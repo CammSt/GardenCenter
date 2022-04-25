@@ -1,0 +1,15 @@
+
+@mixin changeBackgroundAndFontColor ($background,$font) {
+    background-color: $background;
+    color: $font;
+}
+
+%Flex_SpaceBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+$movements : (
+    transition-custom: all .5s,
+    transform-custom: scale(1.2)
+)

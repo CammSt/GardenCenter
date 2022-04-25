@@ -1,3 +1,5 @@
+@import 'extends_mixings_maps';
+
 .messageForm {
     margin-left: 8%;
     margin-right: 10%;
@@ -23,27 +25,24 @@
     font-size: 1.1vw;
     font-weight:600;
     font-style: italic;
-    color: white;
     border-radius: 0.8vw;
-    background-color: #328468;
     border-color: transparent;
     width: 23%;
     margin-bottom: 3%;
     margin-top: 3%;
-
     box-shadow: 0 .5vw #999;
 
+    @include changeBackgroundAndFontColor(#328468, white);
+
     &:active {
-        background-color: white;
-        color: #328468;
         outline: none;
         box-shadow: 0 0.9px #666;
         transform: translateY(4px);  
         border-color: transparent;
+        @include changeBackgroundAndFontColor(white, #328468);
     }
     &:hover, &:focus {
-        background-color: white;
-        color: #328468;
+        @include changeBackgroundAndFontColor(white, #328468);
         border-color: transparent;
         outline: none;
     }
@@ -72,10 +71,9 @@
 
         &:hover {
             text-decoration: none;
-            color: white;
             font-size: 1.2vw;
             border-radius: 5px;
-            background-color: #398C70;
+            @include changeBackgroundAndFontColor(#398C70, white);
           
             padding-left: 1%;
             padding-top: 1%;
@@ -107,9 +105,8 @@
         font-size: 2.4vw;
         font-weight:600;
         font-style: italic;
-        color: white;
         border-radius: 0.8vw;
-        background-color: #328468;
+        @include changeBackgroundAndFontColor(#328468, white);
         border-color: transparent;
         width: 45%;
         margin-bottom: 3%;
@@ -117,16 +114,14 @@
         box-shadow: 0 .5vw #999;
 
         &:active {
-            background-color: white;
-            color: #328468;
+            @include changeBackgroundAndFontColor(white, #328468);
             outline: none;
             box-shadow: 0 5px #666;
             transform: translateY(4px);  
             border-color: transparent;
         }
         &:hover, &:focus {
-            background-color: white;
-            color: #328468;
+            @include changeBackgroundAndFontColor(white, #328468);
             border-color: transparent;
             outline: none;
         }
@@ -155,10 +150,9 @@
     
             &:hover {
                 text-decoration: none;
-                color: white;
                 font-size: 1.2vw;
                 border-radius: 5px;
-                background-color: #398C70;
+                @include changeBackgroundAndFontColor(white, #398C70);
               
                 padding-left: 1%;
                 padding-top: 1%;
