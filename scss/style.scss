@@ -7,6 +7,8 @@
 @import 'header';
 @import 'footer';
 
+@import 'color';
+
 
 * {
     margin: 0;
@@ -30,7 +32,7 @@ body {
   }
 .titleContainer__Text{
     font-size: 2vw;
-    color: #328468;
+    color: nth($list: $colors, $n:3 );
     font-style: italic;
 }
 
@@ -38,7 +40,7 @@ body {
 
     .titleContainer__Text{
         font-size: 4vw;
-        color: #328468;
+        color: nth($list: $colors, $n:3 );
         font-style: italic;
     }
     

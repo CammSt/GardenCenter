@@ -1,4 +1,5 @@
 @import 'extends_mixings_maps';
+@import 'color';
 
 .goToShopContainer {
     position: relative;
@@ -29,18 +30,18 @@
     font-size: 1.4vw;
     font-style: italic;
     border-radius: 0.2vw;
-    border:#328468;
+    border:nth($list: $colors, $n:3 );
     box-shadow: 0 .2vw #999;
-    @include changeBackgroundAndFontColor(#328468, white);
+    @include changeBackgroundAndFontColor(nth($list: $colors, $n:3 ), white);
 
     &:hover, &:focus {
-        @include changeBackgroundAndFontColor(#328468, white);
+        @include changeBackgroundAndFontColor(nth($list: $colors, $n:3 ), white);
         outline: none;
     }
     &:active {
-        @include changeBackgroundAndFontColor(white, #328468);
+        @include changeBackgroundAndFontColor(white, nth($list: $colors, $n:3 ));
         outline: none;
-        box-shadow: 0 5px #666;
+        box-shadow: 0 5px nth($list: $colors, $n:10 );
         transform: translateY(4px);  
     }
     
@@ -67,7 +68,7 @@
         width: 30%;
         font-size: 3.5vw;
         font-style: italic;
-        color: #2B2C2C;
+        color: nth($list: $colors, $n:13 );
 
     }
 
@@ -80,18 +81,18 @@
         font-size: 3vw;
         font-style: italic;
         border-radius: 3px;
-        border:#328468;
-        box-shadow: 0 .3vw #999;
-        @include changeBackgroundAndFontColor(#328468, white);
+        border:nth($list: $colors, $n:3 );
+        box-shadow: 0 .3vw nth($list: $colors, $n:9 );
+        @include changeBackgroundAndFontColor(nth($list: $colors, $n:3 ), white);
     
         &:hover, &:focus {
-            @include changeBackgroundAndFontColor(#328468, white);
+            @include changeBackgroundAndFontColor(nth($list: $colors, $n:3 ), white);
             outline: none;
         }
         &:active {
-            @include changeBackgroundAndFontColor(#328468, white);
+            @include changeBackgroundAndFontColor(nth($list: $colors, $n:3 ), white);
             outline: none;
-            box-shadow: 0 3px #666;
+            box-shadow: 0 3px nth($list: $colors, $n:10 );
             transform: translateY(4px);  
         }
     }
@@ -113,7 +114,7 @@
   
   .eachPaymentContainer__Icon{
     font-size: 4vw;
-    color: #21654E;
+    color: nth($list: $colors, $n:2 );
 }
   
   .eachPaymentContainer__Text{
@@ -139,7 +140,7 @@
       
     .eachPaymentContainer__Icon{
         font-size: 8vw;
-        color: #21654E;
+        color: nth($list: $colors, $n:2 );
         width: 15%;
     }
       
@@ -181,7 +182,7 @@
     text-align: center;
     border-radius: 0.2vw;
     width: 10vw;
-    @include changeBackgroundAndFontColor(#11b899, white);
+    @include changeBackgroundAndFontColor(nth($list: $colors, $n:7 ), white);
 }
 .newReleasesContainer_Name{
     font-size: 1.1vw;
@@ -189,7 +190,7 @@
   
 .newReleasesContainer_Price{
     font-size: 1.1vw;
-    color: #328468;
+    color: nth($list: $colors, $n:3 );
 }
 
 .newReleasesContainer_Item_Image{
@@ -215,7 +216,7 @@
         text-align: center;
         border-radius: 0.2vw;
         width: 15vw;
-        @include changeBackgroundAndFontColor(#11b899, white);
+        @include changeBackgroundAndFontColor(nth($list: $colors, $n:7 ), white);
         
     }
     .newReleasesContainer_Name{
@@ -224,7 +225,7 @@
       
     .newReleasesContainer_Price{
         font-size: 2.8vw;
-        color: #328468;
+        color: nth($list: $colors, $n:3 );
     }
 
     .newReleasesContainer_Item_Image{

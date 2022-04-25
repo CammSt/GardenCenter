@@ -1,7 +1,8 @@
 @import 'extends_mixings_maps';
+@import 'color';
 
 .footerContainer{
-    background-color: #52B191 ;
+    background-color: nth($list: $colors, $n:5 ) ;
     padding: 2%;
 }
   
@@ -31,7 +32,7 @@
         &:hover {
             color:white;
             border-radius: 0.5vw;
-            background-color: #195943;
+            background-color: nth($list: $colors, $n:1 );
             padding-left: 3%;
             padding-right: 3%;
             padding-top: 2%;
@@ -52,7 +53,7 @@
 
 
     .footerContainer{
-        background-color: #52B191 ;
+        background-color: nth($list: $colors, $n:5 );
         padding: 2%;
     }
       
@@ -84,7 +85,7 @@
             &:hover {
                 border-radius: 0.5vw;
                 padding: 10%;
-                @include changeBackgroundAndFontColor(#195943, white);
+                @include changeBackgroundAndFontColor(nth($list: $colors, $n:1 ), white);
             }
         }
     }

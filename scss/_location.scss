@@ -1,3 +1,5 @@
+@import 'color';
+
 .mapContainer {
     text-align: center;
     margin-top: 2%;
@@ -12,7 +14,7 @@
     font-size: 1.5vw;
     font-style: italic;
     margin-bottom: 2%;
-    color: #3D3C3C;
+    color: nth($list: $colors, $n:11 );
 }
    
 .pointsOfSaleContainer {
@@ -27,13 +29,13 @@
    
 .pointsOfSaleContainer__Direction i {
     font-size: 1.3vw;
-    color: #328468;
+    color: nth($list: $colors, $n:3 );
 }
    
 .pointsOfSaleContainer__Direction div {
     font-size: 1.3vw;
     margin-left: 2%;
-    color: #3D3C3C;
+    color: nth($list: $colors, $n:11 );
 }
 
 @media screen and (max-width:800px ) {
@@ -50,13 +52,13 @@
        
     .pointsOfSaleContainer__Direction i {
         font-size: 2.5vw;
-        color: #328468;
+        color: nth($list: $colors, $n:3 );
     }
        
     .pointsOfSaleContainer__Direction div {
         font-size: 2.5vw;
         margin-left: 2%;
-        color: #3D3C3C;
+        color: nth($list: $colors, $n:11 );
     }
 
 }
