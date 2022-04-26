@@ -11,7 +11,7 @@ function main(){
 			});
 
 			$('.bt-menu').animate({
-				left: '55%'
+				left: '65%'
 			});
 
 			contador = 0;
